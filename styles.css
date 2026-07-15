@@ -306,7 +306,11 @@
 
     .birthday-man { animation: birthdayManPop .85s .65s cubic-bezier(.2,.9,.25,1.25) forwards, familyIdle 1.8s 4.7s ease-in-out infinite; }
     .birthday-man .wave-arm { animation: armWave .52s 3.3s ease-in-out 7 alternate; transform-box: fill-box; transform-origin: 18% 85%; }
-    .birthday-man .mouth { animation: smilePop .5s 3.4s ease-out forwards; }
+    .birthday-man .mouth {
+      animation: smilePop .5s 3.4s ease-out forwards;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
 
     .wife {
       left: 58.8%;
